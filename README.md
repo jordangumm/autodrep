@@ -23,4 +23,4 @@ centrifuge.............................. all good
 ```
 
 Run dRep de-replication
-> $dRep dereplicate outout_directory -g path/to/genomes/*.fasta
+> $python runner.py "dRep dereplicate output_directory -g path/to/genomes/*.fasta"
