@@ -26,4 +26,4 @@ Run dRep de-replication
 > $python runner.py "dRep dereplicate output_directory -g path/to/genomes/*.fasta"
 
 Run dRep de-replication on Flux
-> $python runner.py "dRep bonus testDir --check_dependencies" --flux --account \<account_name\>
+> $python runner.py "dRep dereplicate output_directory -g path/to/genomes/*.fasta" --flux --account \<account_name\>
