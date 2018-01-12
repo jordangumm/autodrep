@@ -17,7 +17,7 @@ def runner(cmd, flux, account, ppn, mem, walltime):
     activate = 'source {} && source activate py3'.format(os.path.join(full_dp, 'dependencies/miniconda/bin/activate'))
 
     if flux:
-        qsub = 'qsub -N omics_16s -A {} -q fluxm -l nodes=1:ppn={},mem={},walltime={}'.format(account, ppn, mem, walltime)
+        qsub = 'qsub -N dRep -A {} -q fluxm -l nodes=1:ppn={},mem={},walltime={}'.format(account, ppn, mem, walltime)
         call('echo "{} && {}" | {}'.format(activate, cmd, qsub), shell=True)
     else:
         call('{} && {}'.format(activate, cmd), shell=True)
